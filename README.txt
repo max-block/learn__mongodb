@@ -60,3 +60,6 @@ mongotop -u admin -p ************ --authenticationDatabase=admin
 
 --> Get connection info
 db.getCollectionInfos({name: "system_messages"})
+
+--> Drop db from shell
+mongo test__rocket_mongodb --eval "db.dropDatabase()"
